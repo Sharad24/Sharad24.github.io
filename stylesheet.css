@@ -129,3 +129,8 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.scrollable {
+  height: 200px; /* or any value */
+  overflow-y: auto;
+}
