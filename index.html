@@ -17,6 +17,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" type="image/png" href="images/harvard.png">
+    <!-- <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+    </script>
+  </style> -->
   </head>
   <body>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -30,11 +56,14 @@
                   <p style="text-align:center">
                     <name>Sharad Chitlangia</name>
                   </p>
-                  <p>I am a senior year undergraduate student at <a href="https://www.bits-pilani.ac.in/goa/">BITS Pilani Goa</a>, where I studied Electronics. I specialize in the field of Artificial Intelligence. <!--I am an undergraduate researcher at <a href="https://www.bits-pilani.ac.in/goa/appcair/people">Anuradha and Prashanth Palakurthi Centre for Artificial Intelligence Research (APPCAIR)</a> where I am currently researching on Causal Machine Learning and Explainable Neural Networks. -->
+                  <p>I am a senior year undergraduate student at <a href="https://www.bits-pilani.ac.in/goa/">BITS Pilani Goa</a>, where I studied Electronics. I am specializing in the field of Artificial Intelligence. <!--I am an undergraduate researcher at <a href="https://www.bits-pilani.ac.in/goa/appcair/people">Anuradha and Prashanth Palakurthi Centre for Artificial Intelligence Research (APPCAIR)</a> where I am currently researching on Causal Machine Learning and Explainable Neural Networks. -->
                   </p>
-                  <!--<p>
-                    I worked with Professor <a href="https://scholar.harvard.edu/vijay-janapa-reddi">Vijay Janapa Reddi</a>, Harvard University, on Resource Constrained Reinforcement Learning. I also participated in the Google Summer of Code 2019 working with scientists at CERN on Using Machine Learning for Particle Track Reconstruction. I've worked on various projects ranging the spectrum of AI including Speech, Computer Vision, Reinforcement Learning, Natural Language Processing, EEG and ML in Particle Physics.
-                  </p>-->
+                  <!-- <button class="collapsible"> Advisors </button> -->
+                  <!-- <div class="content" -->
+                    <p>
+                      I have been extremely fortunate to be advised by fairly established researchers including <a href="https://scholar.harvard.edu/vijay-janapa-reddi/home">Professor Vijay Janapa Reddi</a> on Machine Learning Deployment in the real world and <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile">Professor Ashwin Srinivasan</a> on Causal Machine Learning for Explainable AI.
+                    </p>
+                      <!-- </div> -->
                   <p>
                     I was the President of the <a href="https://www.saidl.in"> Society for Artificial Intelligence and Deep Learning</a>. <!--I am also an <a href="https://devmesh.intel.com/member-programs/intel-student-ambassador-program">Intel AI Student Ambassador</a> where I publish technical blogs. I've also taught courses related to the field of Deep Learning to freshmen students.-->
                   <p style="text-align:center">
@@ -68,6 +97,7 @@
               <tbody>
                 <tr>
                   <td style="padding:0px;width:100%;vertical-align:middle">
+                  <p>
                     <ul>
                       <li><b>August 12th, 2020</b>: Featured on my <a href="https://www.bits-pilani.ac.in/Goa/awardsAchievements">University's website</a> for funding of USD 10,000 as Principal Investigator of a project in the Reinforcement Learning Open Source Festival.</li>
                       <li><b>August 5th, 2020</b>: Selected to attend <a href="https://sites.google.com/view/aisummerschool2020/home">Google Research India's AI Summer School.</a></li>
@@ -80,6 +110,7 @@
                       <li><b>January 29th, 2020</b>: <b>Our paper <i>Quantized Reinforcement Learning</i> got accepted at the workshop on Resource Constrained Machine Learning in the 3rd Conference on Machine Learning and Systems.</b></li>
                       <li><b>January 20th, 2020</b>: Selected to work on a sponsored project with TCS Research on Causal Machine Learning.</li>
                     </ul>
+                    </p>
                   </td>
                 </tr>
               </tbody>
@@ -94,8 +125,80 @@
               </tr>
             </tbody>
           </table>
+          
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='dpzlearn_image'><img src='images/neuroRL.jpg' height="160" width="160"></div>
+                    <img src='images/neuroRL.jpg' height="160" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function dpzlearn_start() {
+                      document.getElementById('dpzlearn_image').style.opacity = "1";
+                    }
+                    
+                    function dpzlearn_stop() {
+                    document. ('dpzlearn_image').style.opacity = "0";
+                    }
+                    dpzlearn_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Psychological and Neural Evidence for Reinforcement Learning</papertitle><br>
+                  <p>Ajay Subramanian Krishnan, <strong>Sharad Chitlangia</strong>, Veeky Baths<br>
+                    <i>Under Review</i>
+                  </p>
+                  <!-- <a href="https://arxiv.org/abs/1910.01055"> Arxiv </a> /
+                  <a href="https://github.com/harvard-edge/quarl"> Code </a> /
+                  <a href="data/quarl.bib">BibTeX</a> /
+                  <a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <button class="collapsible">Short Abstract</button>
+                  <div class='content'>
+                  Reinforcement learning methods have been recently been very successful in complex sequential tasks 
+                  like playing Atari games, Go and Poker. Through minimal input from humans, these algorithms are 
+                  able to learn to perform complex tasks from scratch, just through interaction with their environment. 
+                  While there certainly has been considerable independent innovation in the area, many core ideas in RL 
+                  are inspired by animal learning and psychology. Moreover, these algorithms are now helping advance 
+                  neuroscience research by serving as a computational model for many characteristic features of brain 
+                  functioning. In this context, we review a number of findings that establish evidence of key elements 
+                  of the RL problem and solution being represented in regions of the brain. </div>
+                </td>
+              </tr>
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='dpzlearn_image'><img src='images/ica.jpg' height="160" width="160"></div>
+                    <img src='images/ica.jpg' height="160" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function dpzlearn_start() {
+                      document.getElementById('dpzlearn_image').style.opacity = "1";
+                    }
+                    
+                    function dpzlearn_stop() {
+                    document. ('dpzlearn_image').style.opacity = "0";
+                    }
+                    dpzlearn_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Iterative Causal Attribution for Deep Relational Machines</papertitle><br><br>
+                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br>
+                    <i>MLSys ReCoML workshop, 2020</i>
+                  </p> -->
+                  <!-- <a href="https://arxiv.org/abs/1910.01055"> Arxiv </a> /
+                  <a href="https://github.com/harvard-edge/quarl"> Code </a> /
+                  <a href="data/quarl.bib">BibTeX</a> /
+                  <a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <button class="collapsible">Short Abstract</button>
+                  <div class="content">
+                  Deep Relational Machines enjoy the good parts of both hand crafted logical features and Neural Networks. 
+                  We develop an algorithm <i>Iterative Causal Attribution</i> that recursively identifies causal features,
+                  in Deep Relational Machines, <b>that <i>explain</i> why DRMs predict what they do</b>. </div>
+                </td>
+              </tr>
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -122,9 +225,11 @@
                   <a href="https://github.com/harvard-edge/quarl"> Code </a> /
                   <a href="data/quarl.bib">BibTeX</a> /
                   <a href='data/QuaRL-2.png'>Poster</a><br>
+                  <button class="collapsible">Short Abstract</button>
+                  <div class='content'>
                   Quantization is an important technique for deployment to power constrained devices. RL has shown promises in UAV Navigation, etc. 
                   Quantization in RL has not been explored before due to the stochastic and sequential nature of RL compared to tasks like Image 
-                  Classification. We answer the question <strong>Does quantization work for Reinforcement Learning?</strong> while performing >350 experiements.</strong>
+                  Classification. We answer the question <strong>Does quantization work for Reinforcement Learning?</strong> while performing >350 experiements.</strong></div>
                 </td>
               </tr>
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
@@ -145,7 +250,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Particle Track Reconstruction using Machine Learning</papertitle>
+                  <papertitle>Particle Track Reconstruction using Machine Learning</papertitle><br>
                   <br>
                   <a href="https://Sharad24.github.io/trackml"> Work Product Details </a> /
                   <a href="https://github.com/Sharad24/acts-framework"> Code </a> 
@@ -179,9 +284,9 @@
                   <img id="msr-img" src="images/msr.jpg" onmouseover="hover_msr(this);" onmouseout="unhover_msr(this);" height="160" width="160"/>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Microsoft Research</papertitle>
-                  <p>Independent Research Developer</p>
-                  <p>Integration of Flatbuffer and Protobuffer input formats for extremely fast Machine Learning in <a href="https://vowpalwabbit.org/"> VowpalWabbit</a></p>
+                  <papertitle><a href="https://www.microsoft.com/en-us/research/academic-program/rl-open-source-fest/">Microsoft Research</a></papertitle><br><br>
+                  <position>Independent Research Developer</position>
+                  <p><a href="https://vowpalwabbit.org/"> VowpalWabbit</a> is known for its abilitiy to solve complex machine learning problems extremely fast. Through this project, we aim to take this ability, even further, by the introduction of Flatbuffers. Flatbuffers is an efficient cross-platform serialization library known for its memory access efficiency and speed. We develop flatbuffer schemas, for input examples, to be able to store them as binary buffers. We show a performance increase of upto 30%, compared to traditional formats.</p>
                 </td>
               </tr>
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
@@ -203,8 +308,8 @@
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle><a href="http://midas.iiitd.edu.in">Multimodal Digital Media Analysis Lab - MIDAS, IIIT Delhi</a></papertitle>
-                  <br>
-                  <p>Remote Research Development Intern</p>
+                  <br><br>
+                  <position>Remote Research Development Intern</position>
                   <p>Working on use of Online Bayesian Reinforcement Learning for Meta-Learning and Automatic Text Simplification.</p>
                 </td>
               </tr>
@@ -222,8 +327,8 @@
                   <img id="msr-img" src="images/appcair.png" onmouseover="hover_bits(this);" onmouseout="unhover_bits(this);" height="160" width="160"/>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle><a href="https://www.bits-pilani.ac.in/Goa/appcair/home">Anuradha and Prashanth Palakurthi Centre for Artificial Intelligence Research (APPCAIR)</a></papertitle>
-                  <p>Undergraduate Researcher</p>
+                  <papertitle><a href="https://www.bits-pilani.ac.in/Goa/appcair/home">Anuradha and Prashanth Palakurthi Centre for Artificial Intelligence Research (APPCAIR)</a></papertitle><br><br>
+                  <position>Undergraduate Researcher</position>
                   <p>Work on Interpretable and Explainable AI on Deep Relational Machines using Causal Machine
                     Learning. Showed that features that have high Causal Attribution preserve learning and on back tracking
                     features to learning rules, they turn out to cover more example cases than others. Part of the <a href="https://www.bits-pilani.ac.in/Goa/appcair/people">TCS-Datalab</a></p>
@@ -248,9 +353,9 @@
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle><a href="https://edge.seas.harvard.edu">Edge Computing Lab, Harvard University, Cambridge</a></papertitle>
-                  <br>
-                  <p>Research Intern</p>
-                  <p>Worked at intersection of Image Deep Reinforcement Learning and Energy Efficiency for Drones. Extensive use of Tensorflow and TFLite. Performed >350 experiments to show effects of Quantization in RL,
+                  <br><br>
+                  <position>Research Intern</position>
+                  <p>Worked at intersection of Deep Reinforcement Learning and Energy Efficiency for Drones. Extensive use of Tensorflow and TFLite. Performed >350 experiments to show effects of Quantization in RL,
                     Quantization during training to be a better regularizer than traditional techniques and thus enable higher
                     exploration and generalization.
                   </p>
@@ -270,9 +375,9 @@
                   <img id="my-img" src="images/google.png" onmouseover="hover(this);" onmouseout="unhover(this);" height="160" width="160"/>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Google, CERN-HSF</papertitle>
-                  <br>
-                  <p>Google Summer of Code Intern</p>
+                  <papertitle><a href="https://summerofcode.withgoogle.com">Google, CERN-HSF</a></papertitle>
+                  <br><br>
+                  <position>Google Summer of Code Intern</position>
                   <p>Particle Track Reconstruction using Machine Learning. Ported top solutions from TrackML challenge to
                     ACTS Framework. Added an example of running pytorch model in ACTS using Pytorch’s C++ frontend
                     libtorch in an end-to-end fashion to enable rapid testing of models and thread safe fashion to allow massive
@@ -299,9 +404,9 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>UnFound.news</papertitle>
-                  <br>
-                  <p>Machine Learning Intern</p>
+                  <papertitle><a href="https://unfound.news/">UnFound.news</a></papertitle>
+                  <br><br>
+                  <position>Machine Learning Intern</position>
                   <p>Revamped the existing Information Retrieval system to focus more on distributional semantics. Developed
                     embeddings from a deep learning based model which could capture Semantic, Syntactic as well as Contextual information - <b>ELMo</b>. Training and deploying Stance Detection models - <b>ESIM</b>
                   </p>
@@ -348,7 +453,7 @@
                   <a href="https://github.com/SforAiDl/genrl">Code</a>
                 </td>
               </tr>
-              <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
+              <!-- <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='porlight_image'><img src='images/causalml.png' height="160" width="160"></div>
@@ -371,7 +476,7 @@
                   <p></p>
                   <p>Exploring Causal Attribution in Neural Networks. A reason for defamation of Neural Networks is not being able to explain Causal Effects. Being able to explain causal effects would also help in <i>Interpreting</i> these <i>black boxes</i>.</p>
                 </td>
-              </tr>
+              </tr> -->
               <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -541,5 +646,21 @@
               </td>
               </tr>
           </table>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
   </body>
 </html>
