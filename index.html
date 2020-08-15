@@ -104,20 +104,16 @@
             <tbody>
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='dpzlearn_image'><img src='images/neuroRL.jpg' height="160" width="160"></div>
-                    <img src='images/neuroRL.jpg' height="160" width="160">
-                  </div>
                   <script type="text/javascript">
-                    function dpzlearn_start() {
-                      document.getElementById('dpzlearn_image').style.opacity = "1";
+                    function hover_neuro(element) {
+                      element.setAttribute('src', 'images/neuroRL.gif');
                     }
                     
-                    function dpzlearn_stop() {
-                    document. ('dpzlearn_image').style.opacity = "0";
+                    function unhover_neuro(element) {
+                      element.setAttribute('src', 'images/neuroRL.jpg');
                     }
-                    dpzlearn_stop()
                   </script>
+                  <img id="my-img" src="images/neuroRL.jpg" onmouseover="hover_neuro(this);" onmouseout="unhover_neuro(this);" height="160" width="160"/>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle>Psychological and Neural Evidence for Reinforcement Learning</papertitle><br>
