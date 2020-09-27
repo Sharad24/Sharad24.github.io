@@ -64,8 +64,20 @@
 } */
 
 a {
-  color: #1772d0;
+  /* color: #1772d0; */
   text-decoration: none;
+}
+
+a:link{
+  color:#999999;
+}
+
+a:visited{
+  color: #999999;
+}
+
+a:active{
+  color: #999999;
 }
 
 a:focus,
