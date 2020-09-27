@@ -68,6 +68,7 @@ p.institution{font-size:0.75rem;color:#999999}
 
 a {
   /* color: #1772d0; */
+  border-bottom: 1px solid inherit;
   text-decoration: none;
 }
 
@@ -85,8 +86,10 @@ a:active{
 
 a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+  color: #999999;
+  /* text-decoration: underline;*/
+  border-bottom: 1px dotted #999999;
+  border-bottom-color: #999999;
 }
 
 
@@ -106,8 +109,10 @@ strong {
 }
 
 heading {
-  font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; 'Lato', Verdana, Helvetica, sans-serif; */
+  font-family: "Montserrat";
   font-size: 22px;
+  color: #98a6ad;
 }
 
 papertitle {
