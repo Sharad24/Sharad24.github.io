@@ -103,6 +103,24 @@ a {
   font-size: 14px;
 }
 
+body {
+  background: #fff;
+  color: #121212
+}
+/* Dark Mode styles */
+body.dark-theme {
+  color: #eee;
+  background: #121212;
+}
+/* body.dark-theme a { */
+  /* color: #809fff; */
+/* } */
+
+body.light-theme {
+  background: #fff;
+  color: #121212
+}
+
 strong {
   font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
   font-size: 14px;
@@ -200,7 +218,9 @@ p {
   transition: max-height 0.2s ease-out;
   font-family: TeXGyrePagella, "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
 }
+
 .btn{display:inline-block;margin-bottom:0;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;padding:6px 12px;font-size:14px;line-height:1.42857143;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn:active:focus,.btn:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.btn.focus,.btn:focus,.btn:hover{color:#333;text-decoration:none}.btn.active,.btn:active{background-image:none;outline:0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}.btn.disabled,.btn[disabled],fieldset[disabled] .btn{cursor:not-allowed;filter:alpha(opacity=65);opacity:.65;-webkit-box-shadow:none;box-shadow:none}a.btn.disabled,fieldset[disabled] a.btn{pointer-events:none}
+/* .btn-toggle{color:#328cc1;;background-color:inherit;border-color:#46b8da} */
 .btn-info{color:#328cc1;;background-color:inherit;border-color:#46b8da}
 .btn-info.focus,.btn-info:focus{color:#fff;background-color:#31b0d5;border-color:#1b6d85}
 .btn-info:hover{color:#fff;background-color:#31b0d5;border-color:#269abc}

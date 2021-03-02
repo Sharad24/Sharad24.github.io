@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
@@ -30,7 +31,10 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <link rel="icon" type="image/png" href="images/bits.png">
   </head>
-  <body>
+  <body class="dark-theme">
+    <div class="toggle button" style="text-align: right;">
+      <button class="btn-toggle"><i class="fa fa-lightbulb-o"></i></button>
+    </div>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr style="padding:0px">
@@ -759,6 +763,7 @@
               </td>
               </tr>
           </table>
+          
 	  <small><center>
                 	This page has been accessed at least
                 	<a href="http://stuff.mit.edu/doc/counter-howto.html"><img
@@ -780,6 +785,19 @@
         } 
       });
     }
+
+    const btn = document.querySelector('.btn-toggle');
+
+    // Listen for a click on the button
+    btn.addEventListener('click', function() {
+      // Then toggle (add/remove) the .dark-theme class to the body
+      document.body.classList.toggle('dark-theme');
+      // var elem = document.getElementById("btn-toggle");
+    })
+
+    // btn.addEventListener('click', function(){
+
+    // })
     </script>
   </body>
 </html>
