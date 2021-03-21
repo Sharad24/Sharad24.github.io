@@ -66,6 +66,7 @@
                     <a href="mailto:sharadchitlangia24sc@gmail.com" class="fas fa-envelope big-icon" style="color: #328cc1;"></a>
                     <a href="https://github.com/Sharad24" class="fab fa-github" style="color: #328cc1;"></a>
                     <a href="https://scholar.google.com/citations?user=1GG3RAcAAAAJ&hl=en" class="ai ai-google-scholar big-icon" style="color: #328cc1;"></a>
+                    <a href="https://www.semanticscholar.org/author/Sharad-Chitlangia/1389561411" class="ai ai-semantic-scholar big-icon" style="color: #328cc1"></a>
                     <a href="https://www.linkedin.com/in/sharad-chitlangia/" class="fab fa-linkedin" style="color: #328cc1;"> </a>
                     <a href="https://twitter.com/sharad24sc" class="fab fa-twitter" style="color: #328cc1;"> </a><br>
                     <a href="data/CV_Sharad_Chitlangia.pdf">CV</a> /
@@ -183,41 +184,38 @@
             <tbody>
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='dpzlearn_image'><img src='images/lidar.png' height="160" width="160"></div>
+                    <img src='images/lidar.png' height="160" width="160">
+                  </div>
                   <script type="text/javascript">
-                    function hover_neuro(element) {
-                      element.setAttribute('src', 'images/neuroRL.gif');
+                    function dpzlearn_start() {
+                      document.getElementById('dpzlearn_image').style.opacity = "1";
                     }
                     
-                    function unhover_neuro(element) {
-                      element.setAttribute('src', 'images/neuroRL.jpg');
+                    function dpzlearn_stop() {
+                    document. ('dpzlearn_image').style.opacity = "0";
                     }
+                    dpzlearn_stop()
                   </script>
-                  <img id="my-img" src="images/neuroRL.jpg" onmouseover="hover_neuro(this);" onmouseout="unhover_neuro(this);" height="160" width="160"/>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Psychological and Neural Evidence for Reinforcement Learning</papertitle>
-                  <p style="color:#999999;">Under Review at <i>Elsevier Neural Networks</i></p>
-                  <p style="color: #328cc1;">Ajay Subramanian, <u>Sharad Chitlangia</u>, Veeky Baths<br></p>
-                  <!-- <a href="https://arxiv.org/abs/1910.01055"> Arxiv </a> /
-                  <a href="https://github.com/harvard-edge/quarl"> Code </a> /
-                  <a href="data/quarl.bib">BibTeX</a> /
-                  <a href='data/QuaRL-2.png'>Poster</a><br> -->
-                  <!-- <button class="collapsible">Short Abstract</button> -->
-                  <!-- <div class='content'> -->
-                  <!-- Reinforcement learning methods have been recently been very successful in complex sequential tasks 
-                  like playing Atari games, Go and Poker. Through minimal input from humans, these algorithms are 
-                  able to learn to perform complex tasks from scratch, just through interaction with their environment. 
-                  While there certainly has been considerable independent innovation in the area, many core ideas in RL 
-                  are inspired by animal learning and psychology. Moreover, these algorithms are now helping advance 
-                  neuroscience research by serving as a computational model for many characteristic features of brain 
-                  functioning. In this context, we review a number of findings that establish evidence of key elements 
-                  of the RL problem and solution being represented in regions of the brain. -->
-                  <p>We review a number of findings that establish evidence of key elements 
-                    of the RL problem in the neuroscience and psychology literature 
-                    and how they're represented in regions of the brain.</p>
-                  <a href="https://arxiv.org/abs/2007.01099" class="btn btn-info" role="button"> Arxiv </a>
-                  <a href="data/subramanian2020neuroRL.bib" class="btn btn-info" role="button">BibTeX</a>
-                 <!-- </div> -->
+                  <papertitle>Improving Perception via Sensor Placement: Designing Multi-LiDAR Systems for Autonomous Vehicles</papertitle>
+                  <p style="color:#999999;">Under Review. (Available Soon!)</p>
+                  <p style="color: #328cc1;"><u>Sharad Chitlangia</u>, Zuxin Liu, Akhil Agnihotri, Ding Zhao<br></p>
+                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br>
+                    <i>MLSys ReCoML workshop, 2020</i>
+                  </p> -->
+
+                  <!--<a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <!-- <button class="collapsible">Short Abstract</button>
+                  <div class="content"> -->
+                  <p>A surrogate cost function is proposed to optimize placement of LiDAR Sensors so as to increase 3-d Object Detection performance. 
+                    We validate our approach by creating a data collection framework in a realistic open source Autonomous Vehicle Simulator.</p>
+                  <!-- <a href="" class="btn btn-info" role="button"> Arxiv </a> -->
+                  <!-- <a href="https://github.com/harvard-edge/quarl"> Code </a> / -->
+                  <!-- <a href="" class="btn btn-info" role="button">BibTeX</a> -->
+                <!-- </div> -->
                 </td>
               </tr>
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
@@ -260,6 +258,46 @@
                 <!-- </div> -->
                 </td>
               </tr>
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <script type="text/javascript">
+                    function hover_neuro(element) {
+                      element.setAttribute('src', 'images/neuroRL.gif');
+                    }
+                    
+                    function unhover_neuro(element) {
+                      element.setAttribute('src', 'images/neuroRL.jpg');
+                    }
+                  </script>
+                  <img id="my-img" src="images/neuroRL.jpg" onmouseover="hover_neuro(this);" onmouseout="unhover_neuro(this);" height="160" width="160"/>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Psychological and Neural Evidence for Reinforcement Learning</papertitle>
+                  <p style="color:#999999;">Under Review at <i>Elsevier Neural Networks</i></p>
+                  <p style="color: #328cc1;">Ajay Subramanian, <u>Sharad Chitlangia</u>, Veeky Baths<br></p>
+                  <!-- <a href="https://arxiv.org/abs/1910.01055"> Arxiv </a> /
+                  <a href="https://github.com/harvard-edge/quarl"> Code </a> /
+                  <a href="data/quarl.bib">BibTeX</a> /
+                  <a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <!-- <button class="collapsible">Short Abstract</button> -->
+                  <!-- <div class='content'> -->
+                  <!-- Reinforcement learning methods have been recently been very successful in complex sequential tasks 
+                  like playing Atari games, Go and Poker. Through minimal input from humans, these algorithms are 
+                  able to learn to perform complex tasks from scratch, just through interaction with their environment. 
+                  While there certainly has been considerable independent innovation in the area, many core ideas in RL 
+                  are inspired by animal learning and psychology. Moreover, these algorithms are now helping advance 
+                  neuroscience research by serving as a computational model for many characteristic features of brain 
+                  functioning. In this context, we review a number of findings that establish evidence of key elements 
+                  of the RL problem and solution being represented in regions of the brain. -->
+                  <p>We review a number of findings that establish evidence of key elements 
+                    of the RL problem in the neuroscience and psychology literature 
+                    and how they're represented in regions of the brain.</p>
+                  <a href="https://arxiv.org/abs/2007.01099" class="btn btn-info" role="button"> Arxiv </a>
+                  <a href="data/subramanian2020neuroRL.bib" class="btn btn-info" role="button">BibTeX</a>
+                 <!-- </div> -->
+                </td>
+              </tr>
+
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
