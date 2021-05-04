@@ -190,6 +190,12 @@ div.scrollable {
   ;
 }
 
+div.name {
+  color:#31b0d5;
+  text-decoration: underline;
+  clear: both;
+}
+
 p {
   line-height: 1.3;
 }
