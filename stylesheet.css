@@ -108,7 +108,7 @@ body {
   color: #121212
 }
 /* Dark Mode styles */
-body.dark-theme {
+body.light-theme {
   color: #eee;
   background: #121212;
 }
@@ -116,7 +116,7 @@ body.dark-theme {
   /* color: #809fff; */
 /* } */
 
-body.light-theme {
+body.dark-theme {
   background: #fff;
   color: #121212
 }
