@@ -215,9 +215,49 @@
               </tr>
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
+                  <script type="text/javascript">
+                    function hover_neuro(element) {
+                      element.setAttribute('src', 'images/neuroRL.gif');
+                    }
+                    
+                    function unhover_neuro(element) {
+                      element.setAttribute('src', 'images/neuroRL.jpg');
+                    }
+                  </script>
+                  <img id="my-img" src="images/neuroRL.jpg" onmouseover="hover_neuro(this);" onmouseout="unhover_neuro(this);" height="160" width="160"/>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Psychological and Neural Evidence for Reinforcement Learning</papertitle>
+                  <p style="color:#999999;"><i>Elsevier Neural Networks</i></p>
+                  <p style="color: #328cc1;">Ajay Subramanian, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Veeky Baths<br></p>
+                  <!-- <a href="https://arxiv.org/abs/1910.01055"> Arxiv </a> /
+                  <a href="https://github.com/harvard-edge/quarl"> Code </a> /
+                  <a href="data/quarl.bib">BibTeX</a> /
+                  <a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <!-- <button class="collapsible">Short Abstract</button> -->
+                  <!-- <div class='content'> -->
+                  <!-- Reinforcement learning methods have been recently been very successful in complex sequential tasks 
+                  like playing Atari games, Go and Poker. Through minimal input from humans, these algorithms are 
+                  able to learn to perform complex tasks from scratch, just through interaction with their environment. 
+                  While there certainly has been considerable independent innovation in the area, many core ideas in RL 
+                  are inspired by animal learning and psychology. Moreover, these algorithms are now helping advance 
+                  neuroscience research by serving as a computational model for many characteristic features of brain 
+                  functioning. In this context, we review a number of findings that establish evidence of key elements 
+                  of the RL problem and solution being represented in regions of the brain. -->
+                  <p>We review a number of findings that establish evidence of key elements 
+                    of the RL problem in the neuroscience and psychology literature 
+                    and how they're represented in regions of the brain.</p>
+                  <a href="pubs/neuro.pdf" class="btn btn-info" role="button"> PDF </a>
+                  <a href="data/subramanian2020neuroRL.bib" class="btn btn-info" role="button">BibTeX</a>
+                 <!-- </div> -->
+                </td>
+              </tr>
+
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='dpzlearn_image'><img src='images/dreamcoder_ilp_bongard.png' height="160" width="160"></div>
-                    <img src='images/dreamcoder_ilp_bongard.png' height="160" width="160">
+                    <div class="two" id='dpzlearn_image'><img src='images/dash2021incorporating.png' height="160" width="160"></div>
+                    <img src='images/dash2021incorporating.png' height="160" width="160">
                   </div>
                   <script type="text/javascript">
                     function dpzlearn_start() {
@@ -231,15 +271,26 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Using Program Synthesis and Inductive Logic Programming to solve Bongard Problems</papertitle>
-                  <p style="color:#999999;"><i><a href="http://lr2020.iit.demokritos.gr/ip/index.html">10th International Workshop on Approaches and Applications of Inductive Programming</a></i></p>
-		  <p style="color: #328cc1;"><span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Atharv Sonwane, Tirtharaj Dash, Lovekesh Vig, Gautam Shroff, Ashwin Srinivasan<br>
-                  </p>
+                  <papertitle>How to tell Deep Neural Networks what we know</papertitle>
+                  <p style="color:#999999;">Nature, Scientific Reports</p>
+                  <p style="color: #328cc1;">Tirtharaj Dash, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Aditya Ahuja, Ashwin Srinivasan<br></p>
+                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br>
+                    <i>MLSys ReCoML workshop, 2020</i>
+                  </p> -->
 
-                  <p>We utilise graphical program synthesis to synthesize programs that represent Bongard problems, to serve as generative representations of those Bongard problems. We show that these can serve as good representations for learning interpretable discrimiative theories using Inductive Logic Programming to solve Bongard Problems.</p>
-		  <a href="https://arxiv.org/abs/2110.09947" class="btn btn-info" role="button"> Arxiv </a>
-                  <a href="data/bongard_poster.pdf" class="btn btn-info" role="button"> Poster </a>
-                  <a href="data/bongard.bib" class="btn btn-info" role="button"> BibTeX</a>
+                  <!--<a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <!-- <button class="collapsible">Short Abstract</button>
+                  <div class="content"> -->
+                  <p>For the advancement of AI for Science, its important for us to be able to tell 
+                  Machine Learning models what we might know about a particular problem domain 
+                  in a concise form. We survey the current techniques used for incorporation of
+                  domain knowledge in neural networks, list out the major problems and justify how
+                  incorporating domain knowledge could be helpful from the perspective of explainability,
+                  ethics, etc. </p>
+                  <a href="pubs/domainNN.pdf" class="btn btn-info" role="button"> PDF </a>
+                  <!-- <a href="https://github.com/harvard-edge/quarl"> Code </a> / -->
+                  <a href="data/dash2021incorporating.bib" class="btn btn-info" role="button">BibTeX</a>
+                <!-- </div> -->
                 </td>
               </tr>
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
@@ -261,7 +312,7 @@
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle>Widening Access to Applied Machine Learning with tinyML</papertitle>
-                  <p style="color:#999999;"><i>Under Review</i></p>
+                  <p style="color:#999999;"><i>Harvard Data Science Review</i></p>
 		  <p style="color: #328cc1;">Vijay Janapa Reddi, Brian Plancher, Susan Kennedy, Laurence Moroney, Pete Warden, Anant Agarwal, Colby Banbury, Massimo Banzi, Matthew Bennett, Benjamin Brown, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Radhika Ghosal, Sarah Grafman, Rupert Jaeger, Srivatsan Krishnan, Maximilian Lam, Daniel Leiker, Cara Mann, Mark Mazumder, Dominic Pajak, Dhilan Ramaprasad, J. Evan Smith, Matthew Stewart, Dustin Tingley<br>
                   </p>
 
@@ -308,7 +359,6 @@
                   Classification. We answer the question <strong>Does quantization work for Reinforcement Learning?</strong> while performing >350 experiements.</strong></div> -->
                 </td>
               </tr>
-
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -343,85 +393,6 @@
                   <!-- <a href="https://github.com/harvard-edge/quarl"> Code </a> / -->
                   <a href="data/lidar.bib" class="btn btn-info" role="button">BibTeX</a>
                 <!-- </div> -->
-                </td>
-              </tr>
-              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='dpzlearn_image'><img src='images/dash2021incorporating.png' height="160" width="160"></div>
-                    <img src='images/dash2021incorporating.png' height="160" width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function dpzlearn_start() {
-                      document.getElementById('dpzlearn_image').style.opacity = "1";
-                    }
-                    
-                    function dpzlearn_stop() {
-                    document. ('dpzlearn_image').style.opacity = "0";
-                    }
-                    dpzlearn_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>How to tell Deep Neural Networks what we know</papertitle>
-                  <p style="color:#999999;">Nature Scientific Reports</p>
-                  <p style="color: #328cc1;">Tirtharaj Dash, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Aditya Ahuja, Ashwin Srinivasan<br></p>
-                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br>
-                    <i>MLSys ReCoML workshop, 2020</i>
-                  </p> -->
-
-                  <!--<a href='data/QuaRL-2.png'>Poster</a><br> -->
-                  <!-- <button class="collapsible">Short Abstract</button>
-                  <div class="content"> -->
-                  <p>For the advancement of AI for Science, its important for us to be able to tell 
-                  Machine Learning models what we might know about a particular problem domain 
-                  in a concise form. We survey the current techniques used for incorporation of
-                  domain knowledge in neural networks, list out the major problems and justify how
-                  incorporating domain knowledge could be helpful from the perspective of explainability,
-                  ethics, etc. </p>
-                  <a href="pubs/domainNN.pdf" class="btn btn-info" role="button"> PDF </a>
-                  <!-- <a href="https://github.com/harvard-edge/quarl"> Code </a> / -->
-                  <a href="data/dash2021incorporating.bib" class="btn btn-info" role="button">BibTeX</a>
-                <!-- </div> -->
-                </td>
-              </tr>
-              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <script type="text/javascript">
-                    function hover_neuro(element) {
-                      element.setAttribute('src', 'images/neuroRL.gif');
-                    }
-                    
-                    function unhover_neuro(element) {
-                      element.setAttribute('src', 'images/neuroRL.jpg');
-                    }
-                  </script>
-                  <img id="my-img" src="images/neuroRL.jpg" onmouseover="hover_neuro(this);" onmouseout="unhover_neuro(this);" height="160" width="160"/>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Psychological and Neural Evidence for Reinforcement Learning</papertitle>
-                  <p style="color:#999999;"><i>Elsevier Neural Networks</i></p>
-                  <p style="color: #328cc1;">Ajay Subramanian, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Veeky Baths<br></p>
-                  <!-- <a href="https://arxiv.org/abs/1910.01055"> Arxiv </a> /
-                  <a href="https://github.com/harvard-edge/quarl"> Code </a> /
-                  <a href="data/quarl.bib">BibTeX</a> /
-                  <a href='data/QuaRL-2.png'>Poster</a><br> -->
-                  <!-- <button class="collapsible">Short Abstract</button> -->
-                  <!-- <div class='content'> -->
-                  <!-- Reinforcement learning methods have been recently been very successful in complex sequential tasks 
-                  like playing Atari games, Go and Poker. Through minimal input from humans, these algorithms are 
-                  able to learn to perform complex tasks from scratch, just through interaction with their environment. 
-                  While there certainly has been considerable independent innovation in the area, many core ideas in RL 
-                  are inspired by animal learning and psychology. Moreover, these algorithms are now helping advance 
-                  neuroscience research by serving as a computational model for many characteristic features of brain 
-                  functioning. In this context, we review a number of findings that establish evidence of key elements 
-                  of the RL problem and solution being represented in regions of the brain. -->
-                  <p>We review a number of findings that establish evidence of key elements 
-                    of the RL problem in the neuroscience and psychology literature 
-                    and how they're represented in regions of the brain.</p>
-                  <a href="pubs/neuro.pdf" class="btn btn-info" role="button"> PDF </a>
-                  <a href="data/subramanian2020neuroRL.bib" class="btn btn-info" role="button">BibTeX</a>
-                 <!-- </div> -->
                 </td>
               </tr>
 
@@ -464,6 +435,36 @@
                   Classification. We answer the question <strong>Does quantization work for Reinforcement Learning?</strong> while performing >350 experiements.</strong></div> -->
                 </td>
               </tr>
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='dpzlearn_image'><img src='images/dreamcoder_ilp_bongard.png' height="160" width="160"></div>
+                    <img src='images/dreamcoder_ilp_bongard.png' height="160" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function dpzlearn_start() {
+                      document.getElementById('dpzlearn_image').style.opacity = "1";
+                    }
+                    
+                    function dpzlearn_stop() {
+                    document. ('dpzlearn_image').style.opacity = "0";
+                    }
+                    dpzlearn_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Using Program Synthesis and Inductive Logic Programming to solve Bongard Problems</papertitle>
+                  <p style="color:#999999;"><i><a href="http://lr2020.iit.demokritos.gr/ip/index.html">10th International Workshop on Approaches and Applications of Inductive Programming</a></i></p>
+		  <p style="color: #328cc1;"><span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Atharv Sonwane, Tirtharaj Dash, Lovekesh Vig, Gautam Shroff, Ashwin Srinivasan<br>
+                  </p>
+
+                  <p>We utilise graphical program synthesis to synthesize programs that represent Bongard problems, to serve as generative representations of those Bongard problems. We show that these can serve as good representations for learning interpretable discrimiative theories using Inductive Logic Programming to solve Bongard Problems.</p>
+		  <a href="https://arxiv.org/abs/2110.09947" class="btn btn-info" role="button"> Arxiv </a>
+                  <a href="data/bongard_poster.pdf" class="btn btn-info" role="button"> Poster </a>
+                  <a href="data/bongard.bib" class="btn btn-info" role="button"> BibTeX</a>
+                </td>
+              </tr>
+
               <!-- <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
