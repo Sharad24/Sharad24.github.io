@@ -96,7 +96,7 @@
                   <td style="padding:0px;width:100%;vertical-align:middle">
                   <p>
                     <ul>
-                      <li><b style="color:#999999;">June, 2023</b>: Our paper on Learning explainable network request signatures for robot detection, at the intersection of explanability, fraud and cyber-security was accepted for an oral presentation at the 10th edition of Amazon Machine Learning Conference. Check it out here <a href="https://www.amazon.science/publications/learning-explainable-network-request-signatures-for-robot-detection">here</a> </li>
+                      <li><b style="color:#999999;">August, 2023</b>: Our paper on Learning explainable network request signatures for robot detection, at the intersection of explanability, fraud and cyber-security was accepted for an oral presentation at the 10th edition of Amazon Machine Learning Conference. Check it out here <a href="https://www.amazon.science/publications/learning-explainable-network-request-signatures-for-robot-detection">here</a> </li>
                       <li><b style="color:#999999;">June, 2023</b>: Our paper on Scaling Generating Pre-training on User Ad Activity Sequences, at the intersection of generative user modelling, scaling and tabular data, was accepted at the 11th edition of <a href="https://www.adkdd.org/">AdKDD</a>, held in conjunction with KDD. AdKDD is the premier venue at the intersection of advertising and machine learning. Check it out here <a href="https://www.amazon.science/publications/scaling-generative-pre-training-for-user-ad-activity-sequences">here</a></li>
 			<li><b style="color:#999999;">June, 2023</b>: Our paper on Learning explainable network request signatures for robot detection, at the intersection of explanability, fraud and cyber-security was accepted at the <a href="https://ai4cyber-kdd.com/">AI for Cyber Security Workshop</a> in KDD. Check it out here <a href="https://www.amazon.science/publications/learning-explainable-network-request-signatures-for-robot-detection">here</a></li>
 			<li><b style="color:#999999;">February, 2023</b>: We published a blog on our paper <i>Real-time detection of robotic traffic in online advertising</i> at AAAI on the Amazon Science website. Check it out here <a href="https://www.amazon.science/blog/invalidating-robotic-ad-clicks-in-real-time">here</a></li>
@@ -197,6 +197,147 @@
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
+                    <div class="two" id='dpzlearn_image'><img src='images/data_scaling.png' height="160" width="160"></div>
+                    <img src='images/param_scaling.png' height="160" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function dpzlearn_start() {
+                      document.getElementById('dpzlearn_image').style.opacity = "1";
+                    }
+                    
+                    function dpzlearn_stop() {
+                    document. ('dpzlearn_image').style.opacity = "0";
+                    }
+                    dpzlearn_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Scaling Generative Pre-training for User Ad Activity Sequences</papertitle>
+                  <!--<p style="color:#999999;">Under Review. (Available Soon!)</p>-->
+                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br> --><br><br>
+                    <i><a href="https://www.adkdd.org/">17th AdKDD (KDD 2023 Workshop on Artificial Intelligence for Computational Advertising)</a></i>
+                  <p style="color: #ADD8E6;"><span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Krishna Reddy Kesari, Rajat Agarwal<br></p>
+
+                  <!--<a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <!--<button class="collapsible">Short Abstract</button>
+                  <div class="content">-->
+                  <p>We demonstrate scaling properties across model size, data and compute on User Activity Sequences data. We also demonstrate that larger models have better downstream task performance on critical business relevant tasks such as response prediction and bot detection.</p>
+                  <a href="pubs/scaling.pdf" class="btn btn-info" role="button"> PDF </a>
+                  <a href="https://youtu.be/tlAR86HTfaQ" class="btn btn-info" role="button"> Talk </a>
+                  <!-- <a href="https://github.com/harvard-edge/quarl"> Code </a> / -->
+                  <a href="data/scaling.bib" class="btn btn-info" role="button">BibTeX</a>
+                <!-- </div> -->
+                </td>
+              </tr>
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='dpzlearn_image'><img src='images/dt.png' height="160" width="160"></div>
+                    <img src='images/dt.png' height="160" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function dpzlearn_start() {
+                      document.getElementById('dpzlearn_image').style.opacity = "1";
+                    }
+                    
+                    function dpzlearn_stop() {
+                    document. ('dpzlearn_image').style.opacity = "0";
+                    }
+                    dpzlearn_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Learning explainable network request signatures for robot detection</papertitle>
+                  <!--<p style="color:#999999;">Under Review. (Available Soon!)</p>-->
+                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br> --><br><br>
+                    <i><a href="https://ai4cyber-kdd.com/">KDD 2023 Workshop on Artificial Intelligence-Enabled Cybersecurity Analytics</a></i>
+                  <p style="color: #ADD8E6;">Rajat Agarwal, <span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Anand Muralidhar, Adithya Niranjan, Abheesht Sharma, Koustav Sadhukan, Suraj Sheth<br></p>
+
+                  <!--<a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <!--<button class="collapsible">Short Abstract</button>
+                  <div class="content">-->
+                  <p>We introduce a 3 tiered framework for learning and generating explainable network request signatures to explain black box robot detection decisions</p>
+                  <a href="pubs/trafficstream.pdf" class="btn btn-info" role="button"> PDF </a>
+                  <!-- <a href="https://www.youtube.com/watch?v=qkwclSkjc6M" class="btn btn-info" role="button"> Talk </a> -->
+                  <!-- <a href="https://github.com/harvard-edge/quarl"> Code </a> / -->
+                  <a href="data/trafficstream.bib" class="btn btn-info" role="button">BibTeX</a>
+                <!-- </div> -->
+                </td>
+              </tr>
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='dpzlearn_image'><img src='images/slidr_nn.png' height="160" width="160"></div>
+                    <img src='images/slidr_2.png' height="160" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function dpzlearn_start() {
+                      document.getElementById('dpzlearn_image').style.opacity = "1";
+                    }
+                    
+                    function dpzlearn_stop() {
+                    document. ('dpzlearn_image').style.opacity = "0";
+                    }
+                    dpzlearn_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Real-time detection of robotic traffic in online advertising</papertitle>
+                  <!--<p style="color:#999999;">Under Review. (Available Soon!)</p>-->
+                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br> --><br><br>
+                    <i><a href="https://aaai-23.aaai.org/iaai-23-call/">Innovative Applications of Artificial Intelligence, AAAI 2023</a>a></i>
+                  <p style="color: #ADD8E6;">Anand Muralidhar, <span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Rajat Agarwal, Muneeb Ahmed<br></p>
+                  <!--<a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <!--<button class="collapsible">Short Abstract</button>
+                  <div class="content">-->
+                  <p>We introduce an approach towards detection of bot traffic that protects advertisers in realtime from online fraud. We also introduce an optimization framework towards optimal performance across various business slices. We discuss various engineering aspects including its offline re-training methodology, realtime inference infrastructure and disaster recovery mechanisms.</p>
+                  <a href="pubs/slidr.pdf" class="btn btn-info" role="button"> PDF </a>
+                  <a href="https://underline.io/events/380/sessions/14559/lecture/68822-real-time-detection-of-robotic-traffic-in-online-advertising" class="btn btn-info" role="button"> Talk </a>
+                  <a href="https://www.amazon.science/blog/invalidating-robotic-ad-clicks-in-real-time" class="btn btn-info" role="button">Blog</a>
+                  <a href="data/slidr.bib" class="btn btn-info" role="button">BibTeX</a>
+                <!-- </div> -->
+                </td>
+              </tr>
+  
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='dpzlearn_image'><img src='images/lidar.png' height="160" width="160"></div>
+                    <img src='images/lidar.png' height="160" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function dpzlearn_start() {
+                      document.getElementById('dpzlearn_image').style.opacity = "1";
+                    }
+                    
+                    function dpzlearn_stop() {
+                    document. ('dpzlearn_image').style.opacity = "0";
+                    }
+                    dpzlearn_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Investigating the Impact of Multi-LiDAR Placement on Object Detection for Autonomous Driving</papertitle>
+                  <!--<p style="color:#999999;">Under Review. (Available Soon!)</p>-->
+                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br> --><br><br>
+                    <i><a href="https://www.adp3.org/#h.ola1wty64owc">CVPR 2022 <br> and Autonomous Driving: Perception, Prediction and Planning Workshop, CVPR 2021</a></i>
+                  <p style="color: #ADD8E6;">Hanjiang Hu*, Zuxin Liu*, <span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Akhil Agnihotri, Ding Zhao<br></p>
+
+                  <!--<a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <!--<button class="collapsible">Short Abstract</button>
+                  <div class="content">-->
+                  <p>A surrogate cost function is proposed to optimize placement of LiDAR Sensors so as to increase 3-d Object Detection performance. 
+                    We validate our approach by creating a data collection framework in a realistic open source Autonomous Vehicle Simulator.</p>
+                  <a href="pubs/lidar.pdf" class="btn btn-info" role="button"> PDF </a>
+                  <a href="https://www.youtube.com/watch?v=qkwclSkjc6M" class="btn btn-info" role="button"> Talk </a>
+                  <!-- <a href="https://github.com/harvard-edge/quarl"> Code </a> / -->
+                  <a href="data/lidar.bib" class="btn btn-info" role="button">BibTeX</a>
+                <!-- </div> -->
+                </td>
+              </tr>
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
                     <div class="two" id='dpzlearn_image'><img src='images/tinyML.jpeg' height="160" width="160"></div>
                     <img src='images/tinyML.jpeg' height="160" width="160">
                   </div>
@@ -214,7 +355,7 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle>Multilingual Spoken Words Corpus</papertitle>
                   <p style="color:#999999;"><i>NeurIPS 2021</i></p>
-		  <p style="color: #328cc1;">Mark Mazumder, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Colby Banbury, Yiping Kang, Juan Manuel Ciro, Keith Achorn, Daniel Galvez, Mark Sabini, Peter Mattson, David Kanter, Greg Diamos, Pete Warden, Josh Meyer, Vijay Janapa Reddi<br>
+		  <p style="color: #ADD8E6;">Mark Mazumder, <span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Colby Banbury, Yiping Kang, Juan Manuel Ciro, Keith Achorn, Daniel Galvez, Mark Sabini, Peter Mattson, David Kanter, Greg Diamos, Pete Warden, Josh Meyer, Vijay Janapa Reddi<br>
                   </p>
 
 		  <p>Multilingual Spoken Words Corpus is a speech dataset of over 340,000 spoken words in 50 languages, with over 23.7 million examples</p>
@@ -240,7 +381,7 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle>Psychological and Neural Evidence for Reinforcement Learning</papertitle>
                   <p style="color:#999999;"><i>Elsevier Neural Networks</i></p>
-                  <p style="color: #328cc1;">Ajay Subramanian, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Veeky Baths<br></p>
+                  <p style="color: #ADD8E6;">Ajay Subramanian, <span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Veeky Baths<br></p>
                   <!-- <a href="https://arxiv.org/abs/1910.01055"> Arxiv </a> /
                   <a href="https://github.com/harvard-edge/quarl"> Code </a> /
                   <a href="data/quarl.bib">BibTeX</a> /
@@ -284,7 +425,7 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle>How to tell Deep Neural Networks what we know</papertitle>
                   <p style="color:#999999;">Nature, Scientific Reports</p>
-                  <p style="color: #328cc1;">Tirtharaj Dash, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Aditya Ahuja, Ashwin Srinivasan<br></p>
+                  <p style="color: #ADD8E6;">Tirtharaj Dash, <span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Aditya Ahuja, Ashwin Srinivasan<br></p>
                   <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br>
                     <i>MLSys ReCoML workshop, 2020</i>
                   </p> -->
@@ -324,7 +465,7 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle>Widening Access to Applied Machine Learning with tinyML</papertitle>
                   <p style="color:#999999;"><i>Harvard Data Science Review</i></p>
-		  <p style="color: #328cc1;">Vijay Janapa Reddi, Brian Plancher, Susan Kennedy, Laurence Moroney, Pete Warden, Anant Agarwal, Colby Banbury, Massimo Banzi, Matthew Bennett, Benjamin Brown, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Radhika Ghosal, Sarah Grafman, Rupert Jaeger, Srivatsan Krishnan, Maximilian Lam, Daniel Leiker, Cara Mann, Mark Mazumder, Dominic Pajak, Dhilan Ramaprasad, J. Evan Smith, Matthew Stewart, Dustin Tingley<br>
+		  <p style="color: #ADD8E6;">Vijay Janapa Reddi, Brian Plancher, Susan Kennedy, Laurence Moroney, Pete Warden, Anant Agarwal, Colby Banbury, Massimo Banzi, Matthew Bennett, Benjamin Brown, <span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Radhika Ghosal, Sarah Grafman, Rupert Jaeger, Srivatsan Krishnan, Maximilian Lam, Daniel Leiker, Cara Mann, Mark Mazumder, Dominic Pajak, Dhilan Ramaprasad, J. Evan Smith, Matthew Stewart, Dustin Tingley<br>
                   </p>
 
 		  <p>What went behind creating a massive community on tinyML comprising of leading academic and industrial individuals working at the intersection of Machine Learning and Systems? A Whitepaper on the tinyML EdX Professional Certificate Course and the much broader tinyMLx community which garnered over 35000 learners from across the world in less than 6 months.</p>
@@ -353,7 +494,7 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle>ActorQ: Quantization for Actor-Learner Distributed Reinforcement Learning</papertitle>
                   <p style="color:#999999;"><i>Hardware Aware Efficient Training Workshop at ICLR, 2021</i></p>
-                  <p style="color: #328cc1;">Maximilian Lam, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Srivatsan Krishnan, Zishen Wan, Gabriel Barth-Maron, Aleksandra Faust, Vijay Janapa Reddi<br>
+                  <p style="color: #ADD8E6;">Maximilian Lam, <span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Srivatsan Krishnan, Zishen Wan, Gabriel Barth-Maron, Aleksandra Faust, Vijay Janapa Reddi<br>
                     <!-- <i></i> -->
                   </p>
 
@@ -370,43 +511,6 @@
                   Classification. We answer the question <strong>Does quantization work for Reinforcement Learning?</strong> while performing >350 experiements.</strong></div> -->
                 </td>
               </tr>
-              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='dpzlearn_image'><img src='images/lidar.png' height="160" width="160"></div>
-                    <img src='images/lidar.png' height="160" width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function dpzlearn_start() {
-                      document.getElementById('dpzlearn_image').style.opacity = "1";
-                    }
-                    
-                    function dpzlearn_stop() {
-                    document. ('dpzlearn_image').style.opacity = "0";
-                    }
-                    dpzlearn_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Investigating the Impact of Multi-LiDAR Placement on Object Detection for Autonomous Driving</papertitle>
-                  <!--<p style="color:#999999;">Under Review. (Available Soon!)</p>-->
-                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br> --><br><br>
-                    <i><a href="https://www.adp3.org/#h.ola1wty64owc">CVPR 2022 and Autonomous Driving: Perception, Prediction and Planning Workshop, CVPR 2021</a></i>
-                  <p style="color: #328cc1;">Hanjiang Hu*, Zuxin Liu*, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Akhil Agnihotri, Ding Zhao<br></p>
-
-                  <!--<a href='data/QuaRL-2.png'>Poster</a><br> -->
-                  <!--<button class="collapsible">Short Abstract</button>
-                  <div class="content">-->
-                  <p>A surrogate cost function is proposed to optimize placement of LiDAR Sensors so as to increase 3-d Object Detection performance. 
-                    We validate our approach by creating a data collection framework in a realistic open source Autonomous Vehicle Simulator.</p>
-                  <a href="pubs/lidar.pdf" class="btn btn-info" role="button"> PDF </a>
-                  <a href="https://www.youtube.com/watch?v=qkwclSkjc6M" class="btn btn-info" role="button"> Talk </a>
-                  <!-- <a href="https://github.com/harvard-edge/quarl"> Code </a> / -->
-                  <a href="data/lidar.bib" class="btn btn-info" role="button">BibTeX</a>
-                <!-- </div> -->
-                </td>
-              </tr>
-
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -428,7 +532,7 @@
                   <papertitle>Quantized Reinforcement Learning (QuaRL)</papertitle>
                   <p style="color:#999999;"><i>MLSys ReCoML workshop, 2020</i><br>
                   Under Review</p>
-                  <p style="color: #328cc1;">Srivatsan Krishnan, <span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Maximilian Lam, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br>
+                  <p style="color: #ADD8E6;">Srivatsan Krishnan, <span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Maximilian Lam, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br>
                     <!-- <i></i> -->
                   </p>
 
@@ -466,7 +570,7 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <papertitle>Using Program Synthesis and Inductive Logic Programming to solve Bongard Problems</papertitle>
                   <p style="color:#999999;"><i><a href="http://lr2020.iit.demokritos.gr/ip/index.html">10th International Workshop on Approaches and Applications of Inductive Programming</a></i></p>
-		  <p style="color: #328cc1;"><span style="color: #ADD8E6; text-decoration: underline;">Sharad Chitlangia</span>, Atharv Sonwane, Tirtharaj Dash, Lovekesh Vig, Gautam Shroff, Ashwin Srinivasan<br>
+		  <p style="color: #ADD8E6;"><span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Atharv Sonwane, Tirtharaj Dash, Lovekesh Vig, Gautam Shroff, Ashwin Srinivasan<br>
                   </p>
 
                   <p>We utilise graphical program synthesis to synthesize programs that represent Bongard problems, to serve as generative representations of those Bongard problems. We show that these can serve as good representations for learning interpretable discrimiative theories using Inductive Logic Programming to solve Bongard Problems.</p>
