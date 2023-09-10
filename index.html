@@ -298,7 +298,41 @@
                 <!-- </div> -->
                 </td>
               </tr>
-  
+              <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='dpzlearn_image'><img src='images/ssl_mm.png' height="160" width="160"></div>
+                    <img src='images/ssl_re.png' height="160" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function dpzlearn_start() {
+                      document.getElementById('dpzlearn_image').style.opacity = "1";
+                    }
+                    
+                    function dpzlearn_stop() {
+                    document. ('dpzlearn_image').style.opacity = "0";
+                    }
+                    dpzlearn_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Self supervised pre-training for large scale tabular data</papertitle>
+                  <!--<p style="color:#999999;">Under Review. (Available Soon!)</p>-->
+                  <!-- <p>Srivatsan Krishnan*, <strong>Sharad Chitlangia</strong>*, Maximilian Lam*, Zishen Wan, Aleksandra Faust, Vijay Janapa Reddi<br> --><br><br>
+                    <i><a href="https://table-representation-learning.github.io">NeurIPS 2022 Workshop on Table Representation Learning</a></i>
+                  <p style="color: #ADD8E6;"><span style="color: #328cc1; text-decoration: underline;">Sharad Chitlangia</span>, Anand Muralidhar, Rajat Agarwal<br></p>
+
+                  <!--<a href='data/QuaRL-2.png'>Poster</a><br> -->
+                  <!--<button class="collapsible">Short Abstract</button>
+                  <div class="content">-->
+                  <p>We introduce a method for self supervised learning on large scale tabular data and show its efficacy large scale bot detection consisting of very high cardinality categorical and large range continuous features.</p>
+                  <a href="pubs/neurips_ssl_trl.pdf" class="btn btn-info" role="button"> PDF </a>
+                  <!-- <a href="https://www.youtube.com/watch?v=qkwclSkjc6M" class="btn btn-info" role="button"> Talk </a> -->
+                  <!-- <a href="https://github.com/harvard-edge/quarl"> Code </a> / -->
+                  <a href="data/neurips_ssl_trl.bib" class="btn btn-info" role="button">BibTeX</a>
+                <!-- </div> -->
+                </td>
+              </tr>  
               <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
