@@ -8,13 +8,13 @@
   --text-primary: #f0f0f5;
   --text-secondary: #a0a0b0;
   --text-muted: #6a6a7a;
-  --accent: #6366f1;
-  --accent-hover: #818cf8;
-  --accent-glow: rgba(99, 102, 241, 0.3);
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --accent-glow: rgba(96, 165, 250, 0.3);
   --border: rgba(255, 255, 255, 0.08);
   --border-hover: rgba(255, 255, 255, 0.15);
-  --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
-  --gradient-2: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+  --gradient-1: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%);
+  --gradient-2: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
@@ -30,12 +30,12 @@
   --text-primary: #1a1a2e;
   --text-secondary: #4a4a5a;
   --text-muted: #8a8a9a;
-  --accent: #5b5fc7;
-  --accent-hover: #4f46e5;
-  --accent-glow: rgba(91, 95, 199, 0.2);
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-glow: rgba(59, 130, 246, 0.2);
   --border: rgba(0, 0, 0, 0.08);
   --border-hover: rgba(0, 0, 0, 0.15);
-  --gradient-2: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.03) 100%);
+  --gradient-2: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(96, 165, 250, 0.03) 100%);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
@@ -64,20 +64,7 @@ body {
   transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* Subtle grid background */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(circle at 25% 25%, var(--accent-glow) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: -1;
-}
+/* Background - removed gradient glow */
 
 /* ===== Layout ===== */
 .container {
@@ -164,10 +151,7 @@ section {
   font-weight: 400;
   line-height: 1.1;
   margin-bottom: 16px;
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 .hero-bio p {
